@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>breadcrumbs</title>
+  <style>
+    body{
+    background-color:#2C2D3152
+  }
+    .breadcrumbs ul{
+      margin:10px;
+      padding:20px;
+    }
+    .breadcrumbs ul li{
+      display:inline;
+      font-size:35px;
+    }
+    .breadcrumbs ul li::before{
+      content:"/"
+    }
+    h1{
+      font-size:50px;
+      text-align:center;
+      }
+      *{
+        box-sizing:border-box;
+      }
+    html,body{
+      margin:0;
+      padding:0;
+    }
+    .container{
+      margin:20px;
+      font-size:50px
+    }
+    input[type="radio"]{
+      display:none;
+    }
+    .container{
+      border:3px solid black;
+      border-radius:10px
+    }
+    label{
+      display:block;
+      padding:10px;
+      border-bottom:8px solid green;
+      background:grey;
+     
+    }
+    .accordion:last-child>label,. accordion:last-child>.accordion-content{
+      border:none;
+    }
+    .accordion-content{
+      border-bottom:6px solid red;
+      display:none;
+      padding:10px
+    }
+    input:checked~.accordion-content{
+      display:block;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>ASHOKA WOMEN'S <br>ENGINEERING COLLEGE<br> IN KURNOOL</h1>
+  <!--------breadcrumbs-------->
+<div class="breadcrumbs">
+  <ul>
+    <li><a href="https://www.ashokacollege.in/">home</a></li>
+    <li><a href="https://www.ashokacollege.in/vision-mission/">vision& mision</a></li>
+    <li><a href="https://www.ashokacollege.in/training-placement/">Training and placement</a></li>
+    <li><a href="https://www.ashokacollege.in/contact/">contact</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="accordion">
+      <input type="radio" name="accordion" id="accordion1">
+      <label for="accordion1">Accordion</label>
+      <div class="accordion-content">
+      ashoka students are very talented people's
+      </div>
+      </div>
+      </div>
+        <div class="container">
+    <div class="accordion">
+      <input type="radio" name="accordion" id="accordion2">
+      <label for="accordion2">Accordion</label>
+      <div class="accordion-content">
+      ashoka students are very talented people's
+      </div>
+      </div>
+      </div>
+        <div class="container">
+    <div class="accordion">
+      <input type="radio" name="accordion" id="accordion3"> <label for="accordion3">Accordion</label>
+      <div class="accordion-content">
+      ashoka students are very talented people's
+      </div>
+      </div>
+      </div> 
+      <div class="container">
+    <div class="accordion">
+      <input type="radio" name="accordion" id="accordion4">
+      <label for="accordion4">Accordion</label>
+      <div class="accordion-content">
+      ashoka students are very talented people's
+      </div>
+      </div>
+      </div> 
+      <div class="container">
+    <div class="accordion">
+      <input type="radio" name="accordion" id="accordion5">
+      <label for="accordion5">Accordion</label>
+      <div class="accordion-content">
+      ashoka students are very talented people's
+      </div>
+      </div>
+      </div>
+</body>
+
+</html>
