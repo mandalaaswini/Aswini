@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+.main{
+display:grid;
+}
+
+.nav{
+display:grid;
+grid-gap:20px;
+padding:0;
+grid-template-columns:auto auto auto auto;
+}
+.nav ul{
+list-style-type:none;
+}
+.nav a{
+background:#ddd;
+display:block;
+text-decoration:none;
+padding:10px;
+text-align:center;
+color:black;
+font-size:26px;
+text-transform:uppercase;
+box-shadow:1px 1px 3px black;
+}
+
+.nav a:hover{
+background:#123456;
+color:white;
+}
+
+.content{
+grid-area:content;
+background-image:url("images/11.jpeg");
+background-size:cover;
+background-position:center;
+padding:10px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:start;
+min-height:400px;
+font-size:40px
+}
+.content h1{
+font-size:50px;
+color:white;
+text-shadow:3px 3px black
+}
+
+.top-box{
+background:#ddd;
+display:grid;
+align-items:center;
+justify-content:center;
+padding:10px;
+box-shadow:1px 1px 3px black;
+}
+.top-box-a{
+grid-area:top-box-a;
+}
+
+.top-box-b{
+grid-area:top-box-b;
+}
+.top-container{
+display:grid;
+grid-gap:20px;
+grid-template-areas:
+  'content content top-box-a'
+  'content content top-box-b';
+}
+.box{
+background:#ddd;
+padding:10px 10px;
+text-align:center;
+box-shadow:1px 1px 3px black;
+}
+
+.boxes{
+display:grid;
+grid-gap:20px;
+grid-template-columns:auto auto auto auto;
+}
+
+.info{
+background:#123456;
+box-shadow:1px 1px 3px black;
+padding:25px;
+display:grid;
+grid-gap:20px;
+grid-template-columns:auto auto;
+color:white;
+}
+.gallery{
+display:grid;
+grid-gap:20px;
+grid-template-columns:auto auto auto auto;
+}
+.gallery img{
+width:200px;
+height:200px;
+box-shadow:4px 4px 3px black;
+border-radius:50px
+}
+
+
+footer{
+background:gray;
+text-align:center;
+color:black;
+padding:30px;
+margin-top:20px;
+}
+
+
+.img{
+filter:grayscale(230%);
+}
+</style>
+
+</head>
+
+<body>
+<div class="main" id="mainsection">
+<!-----------nav-------->
+<nav class="nav">
+<ul><li><a href="">home</a></li></ul>
+<ul><li><a href="">about</a></li></ul>
+<ul><li><a href="">contact us</a></li></ul>
+<ul><li><a href="">login</a></li></ul>
+</nav>
+<!----------sub section--------->
+<br><br>
+<section class="top-container">
+<header class="content">
+<h1>Restaurant food</h1>
+<a href="">Read More..</a>
+</header>
+
+
+
+<div class="top-box top-box-a">
+  <img src="images/2.jpeg" width="150px" height="150px">
+<p class="course">chicken mandi</p>
+
+</div>
+
+<div class="top-box top-box-b">
+<img src="images/1.jpeg" width="150px" height="150px">
+<p class="course">veg mandi</p>
+
+</div>
+
+</section>
+<br><br>
+<section class="boxes">
+
+<div class="box">
+  <img src="images/3.jpeg" width="150px" height="150px">
+<h3>tiffin</h3>
+
+</div>
+
+<div class="box">
+  <img src="images/4.jpeg" width="150px" height="150px">
+<h3>lunch</h3>
+
+</div>
+
+<div class="box">
+  <img src="images/5.jpeg" width="150px" height="150px">
+<h3>snacks</h3>
+
+</div>
+
+<div class="box">
+  <img src="images/6.jpeg" width="150px" height="150px">
+<h3>Dinner</h3>
+
+
+</div>
+
+
+</section>
+<br><br>
+<section class="info">
+<img src="images/7.jpeg" alt="error"  width="400px" height="400px">
+<div class="">
+<h3 style="font-size:30px;color:white">Restaurant food </h3>
+<p style="font-size:20px">restaurant, establishment where refreshments or meals may be procured by the public. The public dining room that ultimately came to be known as the ...Restaurant is a public place, which opens to all for selling food and beverage to any person and peoples. We are visit restaurant and take food from family style restaurant is similar to the casual dining model mentioned above with one significant difference: servers deliver the food in large dishes and ...
+</p>
+</div>
+</section>
+<br><br>
+<section class="gallery">
+
+<img src="images/8.jpeg" alt="error">
+<img src="images/9.jpeg" alt="error">
+<img src="images/10.jpeg" alt="error">
+<img src="images/11.jpeg" alt="error">
+<img src="images/1.jpeg" alt="error">
+<img src="images/2.jpeg" alt="error">
+<img src="images/3.jpeg" alt="error">
+<img src="images/4.jpeg" alt="error">
+
+</section>
+
+<footer>
+<h1>different types of food in restaurant @2023</h1>
+<div class="container">
+<div class="address">
+  <input type=" " value="name"><br> <br>
+  <input type=" " value="contact no">
+  </div>
+<div class="address1">
+  <p>Kurnool chef <br>near by<br> dupadu railway station <br>pincode:515767</p>
+  </div>  
+  <div class="address2">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-whatsapp"></i>
+  <i class="fa-brands fa-telegram"></i>
+ </div>
+</footer>
+
+
+
+
+</body>
+</html>
